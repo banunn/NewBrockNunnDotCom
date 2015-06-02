@@ -1,0 +1,27 @@
+// Fonts
+
+$font-julias: 'Julius Sans One', sans-serif;
+$font-roboto:'Roboto', sans-serif;
+
+// Colors
+$dark-blue: #2a3239;
+$bg-blue: #1B2229;
+$light-grey: #c4c4c4; 
+$default-color:#636363;
+$border-grey:#EBEBEB;
+
+
+// Measures
+
+$padding-small:15px;
+$padding-large:25px;
+
+$desktop: 1200px;
+$tablet: 900px;
+$phone: 540px;
+
+
+//animation & easing
+
+$swing:cubic-bezier(0.18, 0.89, 0.32, 1.28) .35s;
+$fast-out-slow-in:cubic-bezier(0.4, 0, 0.2, 1) .55s;

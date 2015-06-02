@@ -1,0 +1,38 @@
+.nav-primary {
+    font-family: $font-julias;
+    a {
+        color: $light-grey;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1em $padding-small;
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.88);
+        transition: padding $swing;
+        border-bottom: 1px solid #000;
+        box-shadow: 0px 1px 0px #fff;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+        box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15);
+        &:hover {
+            background: darken($dark-blue, 10%);
+            padding-left: 30px;
+        }
+        
+        &.is-active {
+            background: darken($dark-blue, 10%);
+            padding-left: 30px;
+        }
+        
+        i {
+            margin-right: $padding-small / 2;
+        }
+    }
+    ul {
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    li {
+        display: block;
+    }
+}

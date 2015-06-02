@@ -1,0 +1,33 @@
+.layout-sidebar {
+    width: 280px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    transform: translateX(0px);
+    transition: transform $fast-out-slow-in;
+    .is-expanded & {
+        
+    }
+    .is-not-expanded & {
+        transform: translateX(-280px);
+    }
+}
+
+.layout-primary {
+    width: calc(100% - 280px);
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.68em;
+    transition: transform $fast-out-slow-in, width $fast-out-slow-in;
+    .is-expanded & { 
+        transform: translateX(280px);
+    }
+    .is-not-expanded & {
+        padding-left: 15px;
+        padding-right: 15px;
+        transform: translateX(0px);
+        width: 100%;
+    }
+}

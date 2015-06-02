@@ -1,0 +1,57 @@
+.section-nav {
+    background: $dark-blue; 
+    color: $light-grey;
+    @media(min-width: $phone){
+      box-shadow: inset -8px 0px 7px rgba(0, 0, 0, 0.23);
+      border-right: 1px solid #161B20;
+    }
+    @media(max-width: $phone){
+        box-shadow: 8px 0px 7px rgba(0, 0, 0, 0.23);
+        border-right: 1px solid #161B20;
+    }
+} 
+
+.sidebar-brand {
+    padding: $padding-small;
+}
+
+// I'm not really happy with this selector organization
+.sidebar-social {
+    padding: $padding-small;
+    .icon {
+        margin-right: $padding-small;
+        &:active {
+            position: relative;
+            top:1px;
+        }
+    }
+}
+
+
+/// 
+
+.primary-content {
+    margin: 25px auto;
+    background: #f7f7f7;
+    width: 85%;
+    max-width: 1200px;
+    min-width: 480px;
+    padding: $padding-small;
+    border-radius: 15px;
+    img {
+        border: 1px solid $border-grey;
+        padding: 5px;
+        border-radius: 3.5px;
+    }
+    @media(max-width: $phone){
+        width: 100%;
+        min-width: 320px;
+    }
+}
+
+
+.perf-testr {
+    position: absolute;
+    top:10px;
+    right:10px;
+}

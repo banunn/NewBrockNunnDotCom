@@ -1,0 +1,26 @@
+html {
+    font-family: $font-roboto;
+    font-size: 16px;
+    color: $default-color;
+}
+
+body {
+    background: $bg-blue;
+}
+
+
+
+// Layout Helpers 
+
+.fl-left {
+    float: left;
+}
+
+.fl-right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
